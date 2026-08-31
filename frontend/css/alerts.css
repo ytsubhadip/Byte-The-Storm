@@ -1,0 +1,102 @@
+/* =========================
+   ALERTS PAGE
+   ========================= */
+
+.alert-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    align-items: stretch;
+}
+
+.big-alert {
+    min-height: 0;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(20, 45, 65, 0.05);
+}
+
+.big-alert h2 {
+    font-size: 19px;
+    margin: 15px 0 10px;
+}
+
+.big-alert strong {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.big-alert p {
+    font-size: 12px;
+    color: var(--muted);
+    margin: 8px 0;
+}
+
+.big-alert button {
+    margin-top: 12px;
+    padding: 9px 12px;
+    border: 0;
+    border-radius: 6px;
+    background: #172f43;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.big-alert button:hover {
+    opacity: 0.9;
+}
+
+
+/* Alert severity */
+
+.big-alert.severe {
+    border-top: 4px solid var(--red);
+}
+
+.big-alert.high {
+    border-top: 4px solid var(--orange);
+}
+
+.big-alert.watch {
+    border-top: 4px solid var(--yellow);
+}
+
+
+/* Badge */
+
+.badge {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   RECOMMENDED ACTIONS
+   ========================= */
+
+.recommendations {
+    margin-top: 18px;
+    background: #ffffff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+}
+
+.recommendations > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.recommendations b {
+    padding: 14px;
+    background: #f7fafc;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    font-size: 11px;
+}

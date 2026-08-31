@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --nav: #09243a;
+    --blue: #1769d1;
+    --bg: #f5f8fb;
+    --card: #ffffff;
+    --text: #17283a;
+    --muted: #6e8193;
+    --line: #dce5ed;
+    --green: #22a66f;
+    --orange: #ed8a18;
+    --red: #e94b55;
+    --yellow: #e6b31f;
+}
+
+body {
+    font-family: Inter, Segoe UI, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 28px 34px;
+}
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 22px;
+}
+
+.page-heading h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.page-heading p {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.updated {
+    font-size: 11px;
+    color: var(--muted);
+}
+
+.ico {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    display: grid;
+    place-items: center;
+}
+
+.blue {
+    background: #e8f3ff;
+    color: var(--blue);
+}
+
+.orange {
+    background: #fff3e4;
+    color: var(--orange);
+}
+
+.green {
+    background: #e9f8f1;
+    color: var(--green);
+}
+
+.green-txt {
+    color: var(--green);
+}
+
+.card {
+    padding: 16px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 13px;
+}
+
+.card-title h2 {
+    font-size: 15px;
+}
+
+.live {
+    font-size: 10px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.live i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--green);
+}
+
+
+/* =========================
+   RISK INDICATORS
+   ========================= */
+
+.risk {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.risk.low {
+    background: #3e91df;
+}
+
+.risk.moderate {
+    background: #e9b82c;
+}
+
+.risk.high {
+    background: #ef8a25;
+}
+
+.risk.severe {
+    background: #e44c55;
+}
+
+
+/* =========================
+   SATELLITE PREVIEW
+   ========================= */
+
+.sat {
+    height: 92px;
+    background: linear-gradient(
+        145deg,
+        #b9d8e8,
+        #4b879e 45%,
+        #123f55
+    );
+    border-radius: 5px;
+    position: relative;
+}
+
+.sat small {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #ffffff;
+    font-size: 8px;
+}
+
+.cloud {
+    width: 45px;
+    height: 45px;
+    border: 5px solid #e8fbff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: 28%;
+    top: 22%;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    text-align: center;
+    color: #8192a0;
+    font-size: 10px;
+    padding: 30px;
+    border-top: 1px solid var(--line);
+    margin-top: 30px;
+}

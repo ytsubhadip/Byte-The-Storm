@@ -1,0 +1,197 @@
+.stats {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+    margin-bottom:18px
+}
+
+.stat,.card {
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:9px;
+    box-shadow:0 2px 8px #10283a0a
+}
+
+.stat {
+    padding:18px;
+    display:flex;
+    gap:14px;
+    align-items:center
+}
+
+.stat label {
+    display:block;
+    color:var(--muted);
+    font-size:11px;
+    margin-bottom:4px
+}
+
+.stat strong {
+    font-size:24px;
+    display:block
+}
+
+.stat a,.more {
+    display:block;
+    color:var(--blue);
+    font-size:11px;
+    margin-top:7px
+}
+
+.grid-two {
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:18px;
+    margin-bottom:18px
+}
+
+.analysis-top {
+    display:flex;
+    gap:18px;
+    align-items:center;
+    border-bottom:1px solid var(--line);
+    padding-bottom:17px
+}
+
+.progress {
+    width:105px;
+    height:105px;
+    border-radius:50%;
+    background:conic-gradient(var(--blue) 0 78%,#e8eef3 78%);
+    display:grid;
+    place-items:center;
+    position:relative
+}
+
+.progress:after {
+    content:"";
+    position:absolute;
+    width:79px;
+    height:79px;
+    background:#fff;
+    border-radius:50%
+}
+
+.progress b,.progress small {
+    z-index:1
+}
+
+.progress small {
+    position:absolute;
+    top:63px;
+    font-size:8px;
+    color:var(--muted)
+}
+
+.detect label,.detect strong,.detect b {
+    display:block;
+    font-size:10px;
+    margin-bottom:5px
+}
+
+.detect label {
+    color:var(--muted)
+}
+
+.detect strong,.detect b {
+    color:var(--green)
+}
+
+.metrics {
+    display:grid
+}
+
+.metrics div {
+    display:flex;
+    justify-content:space-between;
+    padding:12px 0;
+    border-bottom:1px solid #edf1f4
+}
+
+.metrics label {
+    font-size:11px;
+    color:var(--muted)
+}
+
+.metrics b {
+    font-size:11px
+}
+
+.bottom {
+    display:grid;
+    grid-template-columns:1fr 1.15fr 1.2fr 1fr;
+    gap:18px
+}
+
+.riskrow {
+    margin:14px 0
+}
+
+.riskrow span {
+    display:flex;
+    justify-content:space-between;
+    font-size:11px
+}
+
+.riskrow>div {
+    height:5px;
+    background:#edf1f4;
+    border-radius:4px;
+    margin-top:7px;
+    overflow:hidden
+}
+
+.riskrow i {
+    height:100%;
+    display:block;
+    background:var(--red);
+    border-radius:4px
+}
+
+.riskrow i.orange {
+    background:var(--orange)
+}
+
+.riskrow i.yellow {
+    background:var(--yellow)
+}
+
+.satfeed {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:6px
+}
+
+.alert {
+    padding:10px;
+    border-left:3px solid;
+    margin-bottom:7px;
+    background:#fafbfd
+}
+
+.alert b,.alert span {
+    display:block;
+    font-size:10px
+}
+
+.alert span {
+    color:var(--muted);
+    margin-top:3px
+}
+
+.alert.severe {
+    border-color:var(--red)
+}
+
+.alert.high {
+    border-color:var(--orange)
+}
+
+.alert.watch {
+    border-color:var(--yellow)
+}
+
+#chart {
+    height:110px!important
+}
+

@@ -1,0 +1,1 @@
+console.log('BYTE THE STORM frontend ready');
