@@ -1,197 +1,255 @@
-.stats {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:16px;
-    margin-bottom:18px
+/* ==============================
+   DASHBOARD PAGE
+   ============================== */
+
+.dashboard-page {
+    background: #05070b;
+    color: #ffffff;
 }
 
-.stat,.card {
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:9px;
-    box-shadow:0 2px 8px #10283a0a
+
+/* ==============================
+   MAIN CONTAINER
+   ============================== */
+
+.dashboard-page .container {
+    background: #05070b;
 }
 
-.stat {
-    padding:18px;
-    display:flex;
-    gap:14px;
-    align-items:center
+
+/* ==============================
+   PAGE HEADING
+   ============================== */
+
+.dashboard-page .page-heading h1 {
+    color: #ffffff;
 }
 
-.stat label {
-    display:block;
-    color:var(--muted);
-    font-size:11px;
-    margin-bottom:4px
+.dashboard-page .page-heading p {
+    color: rgba(255, 255, 255, 0.60);
 }
 
-.stat strong {
-    font-size:24px;
-    display:block
+.dashboard-page .updated {
+    color: rgba(255, 255, 255, 0.55);
 }
 
-.stat a,.more {
-    display:block;
-    color:var(--blue);
-    font-size:11px;
-    margin-top:7px
+
+/* ==============================
+   MAP CARD
+   ============================== */
+
+.dashboard-page .map-card {
+    margin-bottom: 18px;
+
+    background: #0b1118;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    overflow: hidden;
 }
 
-.grid-two {
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:18px;
-    margin-bottom:18px
+.dashboard-page .map-card .card-title {
+    padding: 16px 18px;
+
+    background: #0b1118;
 }
 
-.analysis-top {
-    display:flex;
-    gap:18px;
-    align-items:center;
-    border-bottom:1px solid var(--line);
-    padding-bottom:17px
+.dashboard-page .map-card h2 {
+    color: #ffffff;
 }
 
-.progress {
-    width:105px;
-    height:105px;
-    border-radius:50%;
-    background:conic-gradient(var(--blue) 0 78%,#e8eef3 78%);
-    display:grid;
-    place-items:center;
-    position:relative
+.dashboard-page .map-card .live {
+    color: #72e6a1;
 }
 
-.progress:after {
-    content:"";
-    position:absolute;
-    width:79px;
-    height:79px;
-    background:#fff;
-    border-radius:50%
+
+/* ==============================
+   MAP
+   ============================== */
+
+.dashboard-page .map-card #map {
+    width: 100%;
+    height: 560px;
+
+    border-radius: 0;
+
+    overflow: hidden;
 }
 
-.progress b,.progress small {
-    z-index:1
+
+/* ==============================
+   BOTTOM GRID
+   ============================== */
+
+.dashboard-page .bottom {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.15fr
+        1.2fr
+        1fr;
+
+    gap: 18px;
 }
 
-.progress small {
-    position:absolute;
-    top:63px;
-    font-size:8px;
-    color:var(--muted)
+
+/* ==============================
+   BOTTOM CARDS
+   ============================== */
+
+.dashboard-page .bottom > * {
+    background: #0b1118;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 8px;
+
+    padding: 18px;
 }
 
-.detect label,.detect strong,.detect b {
-    display:block;
-    font-size:10px;
-    margin-bottom:5px
+.dashboard-page .bottom h2,
+.dashboard-page .bottom h3 {
+    color: #ffffff;
 }
 
-.detect label {
-    color:var(--muted)
+
+/* ==============================
+   RISK ZONES
+   ============================== */
+
+.dashboard-page .riskrow {
+    margin: 14px 0;
 }
 
-.detect strong,.detect b {
-    color:var(--green)
+.dashboard-page .riskrow span {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    color: #dce4ea;
 }
 
-.metrics {
-    display:grid
+.dashboard-page .riskrow > div {
+    height: 5px;
+
+    background: #202a33;
+
+    border-radius: 4px;
+
+    margin-top: 7px;
+
+    overflow: hidden;
 }
 
-.metrics div {
-    display:flex;
-    justify-content:space-between;
-    padding:12px 0;
-    border-bottom:1px solid #edf1f4
+.dashboard-page .riskrow i {
+    height: 100%;
+
+    display: block;
+
+    background: var(--red);
+
+    border-radius: 4px;
 }
 
-.metrics label {
-    font-size:11px;
-    color:var(--muted)
+.dashboard-page .riskrow i.orange {
+    background: var(--orange);
 }
 
-.metrics b {
-    font-size:11px
+.dashboard-page .riskrow i.yellow {
+    background: var(--yellow);
 }
 
-.bottom {
-    display:grid;
-    grid-template-columns:1fr 1.15fr 1.2fr 1fr;
-    gap:18px
+
+/* ==============================
+   SATELLITE FEED
+   ============================== */
+
+.dashboard-page .satfeed {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 6px;
 }
 
-.riskrow {
-    margin:14px 0
+
+/* ==============================
+   ALERTS
+   ============================== */
+
+.dashboard-page .alert {
+    padding: 10px;
+
+    border-left: 3px solid;
+
+    margin-bottom: 7px;
+
+    background: #111820;
 }
 
-.riskrow span {
-    display:flex;
-    justify-content:space-between;
-    font-size:11px
+.dashboard-page .alert b {
+    color: #ffffff;
 }
 
-.riskrow>div {
-    height:5px;
-    background:#edf1f4;
-    border-radius:4px;
-    margin-top:7px;
-    overflow:hidden
+.dashboard-page .alert span {
+    display: block;
+
+    font-size: 10px;
+
+    color: rgba(255, 255, 255, 0.50);
+
+    margin-top: 3px;
 }
 
-.riskrow i {
-    height:100%;
-    display:block;
-    background:var(--red);
-    border-radius:4px
+
+/* ==============================
+   CHART
+   ============================== */
+
+.dashboard-page #chart {
+    height: 110px !important;
 }
 
-.riskrow i.orange {
-    background:var(--orange)
+
+/* ==============================
+   LINKS
+   ============================== */
+
+.dashboard-page .bottom a {
+    color: #a9c9e8;
+
+    text-decoration: none;
 }
 
-.riskrow i.yellow {
-    background:var(--yellow)
+.dashboard-page .bottom a:hover {
+    color: #ffffff;
 }
 
-.satfeed {
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:6px
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+
+@media (max-width: 1100px) {
+
+    .dashboard-page .bottom {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.alert {
-    padding:10px;
-    border-left:3px solid;
-    margin-bottom:7px;
-    background:#fafbfd
-}
 
-.alert b,.alert span {
-    display:block;
-    font-size:10px
-}
+@media (max-width: 700px) {
 
-.alert span {
-    color:var(--muted);
-    margin-top:3px
-}
+    .dashboard-page .map-card #map {
+        height: 480px;
+    }
 
-.alert.severe {
-    border-color:var(--red)
+    .dashboard-page .bottom {
+        grid-template-columns: 1fr;
+    }
 }
-
-.alert.high {
-    border-color:var(--orange)
-}
-
-.alert.watch {
-    border-color:var(--yellow)
-}
-
-#chart {
-    height:110px!important
-}
-

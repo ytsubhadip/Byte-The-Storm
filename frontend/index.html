@@ -1,135 +1,54 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>dashboard</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BYTE THE STORM | AI Cyclone Intelligence</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-
-<body>
-    <header class="topbar"><a class="brand" href="index.html"><span class="logo">◉</span><span><b>BYTE THE
-                    STORM</b><small>Turning Satellite Data into Early Warnings.</small></span></a>
-        <nav><a class="nav active" href="index.html">Dashboard</a><a class="nav" href="pages/live-map.html">Live
-                Map</a><a class="nav" href="pages/forecast.html">Forecast</a><a class="nav"
-                href="pages/alerts.html">Alerts</a><a class="nav" href="pages/data-sources.html">Data Sources</a><a
-                class="nav" href="pages/about.html">About</a></nav>
+<body class="home-page">
+    <header class="topbar home-nav">
+        <a class="brand" href="index.html">
+            
+            <span>
+                <b>BYTE THE STORM</b>
+                <small>AI-Powered Cyclone Intelligence</small>
+            </span>
+        </a>
+        <nav>
+            <a class="nav active" href="index.html">Home</a>
+            <a class="nav" href="pages/dashboard.html">Dashboard</a>
+            <a class="nav" href="pages/about.html">About</a>
+        </nav>
     </header>
-    <main class="container">
-        <div class="page-heading">
-            <div>
-                <h1>Dashboard</h1>
-                <p>Overview of current cyclone activity and AI predictions.</p>
-            </div><span class="updated">Last Updated: <b>10:30 AM IST</b> ↻</span>
+
+    <main class="hero">
+    
+        <div class="hero-content">
+            <div class="hero-badge"><span>AI</span> Intelligent Cyclone Monitoring</div>
+            <h1>Predict the Storm.<br><em>Protect the Future.</em></h1>
+            <p>
+                AI-powered cyclone monitoring that combines satellite intelligence,
+                environmental data and predictive analysis to deliver faster early warnings.
+            </p>
+            <div class="hero-actions">
+                <a class="hero-btn primary" href="pages/dashboard.html">Explore Dashboard <span>→</span></a>
+                <a class="hero-btn secondary" href="pages/about.html">How It Works <span>↗</span></a>
+            </div>
+            <div class="hero-note"><i></i> Turning satellite data into early warnings.</div>
         </div>
-        <div class="stats">
-            <div class="stat"><span class="ico blue">◉</span>
-                <div><label>Active Systems</label><strong>03</strong><a href="pages/live-map.html">View all →</a></div>
-            </div>
-            <div class="stat"><span class="ico orange">△</span>
-                <div><label>High Risk Zones</label><strong>03</strong><a href="pages/alerts.html">View all →</a></div>
-            </div>
-            <div class="stat"><span class="ico green">✓</span>
-                <div><label>AI Prediction</label><strong class="green-txt">ON</strong><a
-                        href="pages/forecast.html">Details →</a></div>
-            </div>
-            <div class="stat"><span class="ico blue">◷</span>
-                <div><label>Data Updated</label><strong>10:30 AM</strong><a href="pages/data-sources.html">Today</a>
-                </div>
-            </div>
-        </div>
-        <div class="grid-two">
-            <article class="card">
-                <div class="card-title">
-                    <h2>Live Cyclone Monitor</h2><span class="live"><i></i> Live</span>
-                </div>
-                <div id="map"></div>
-                <div class="legend"><span><i class="risk low"></i>Low Risk</span><span><i
-                            class="risk moderate"></i>Moderate Risk</span><span><i class="risk high"></i>High
-                        Risk</span><span><i class="risk severe"></i>Severe Risk</span></div>
-                <div class="layers"><button
-                        class="chosen">Satellite</button><button>Wind</button><button>Rainfall</button><button>Temperature</button><button>Ocean
-                        Temp</button></div>
-            </article>
-            <article class="card">
-                <div class="card-title">
-                    <h2>Current System Analysis</h2>
-                </div>
-                <div class="analysis-top">
-                    <div class="progress"><b>78%</b><small>Formation Probability</small></div>
-                    <div class="detect"><label>AI Detection Status</label><strong>Potential Cyclonic<br>System
-                            Detected</strong><label>Confidence</label><b>92%</b></div>
-                </div>
-                <div class="metrics">
-                    <div><label>Wind Speed</label><b>85 km/h</b></div>
-                    <div><label>Movement</label><b>North-West · 14 km/h</b></div>
-                    <div><label>Pressure</label><b>982 hPa</b></div>
-                    <div><label>Sea Surface Temperature</label><b>29.5 °C</b></div>
-                    <div><label>Humidity</label><b>87%</b></div>
-                </div><a class="more" href="pages/forecast.html">View full analysis →</a>
-            </article>
-        </div>
-        <div class="bottom">
-            <article class="card">
-                <div class="card-title">
-                    <h2>High Risk Zones</h2>
-                </div>
-                <div class="riskrow"><span>Coastal West Bengal <b>85%</b></span>
-                    <div><i style="width:85%"></i></div>
-                </div>
-                <div class="riskrow"><span>Odisha Coast <b>72%</b></span>
-                    <div><i class="orange" style="width:72%"></i></div>
-                </div>
-                <div class="riskrow"><span>Bangladesh Coast <b>68%</b></span>
-                    <div><i class="yellow" style="width:68%"></i></div>
-                </div><a class="more" href="pages/alerts.html">View all zones →</a>
-            </article>
-            <article class="card">
-                <div class="card-title">
-                    <h2>Satellite Feed</h2>
-                </div>
-                <div class="satfeed">
-                    <div class="sat">
-                        <div class="cloud"></div><small>10:00 UTC</small>
-                    </div>
-                    <div class="sat">
-                        <div class="cloud"></div><small>10:15 UTC</small>
-                    </div>
-                    <div class="sat">
-                        <div class="cloud"></div><small>10:30 UTC</small>
-                    </div>
-                    <div class="sat">
-                        <div class="cloud"></div><small>10:45 UTC</small>
-                    </div>
-                </div><a class="more" href="pages/data-sources.html">View full timeline →</a>
-            </article>
-            <article class="card">
-                <div class="card-title">
-                    <h2>AI Forecast</h2><small>Next 48 Hours</small>
-                </div><canvas id="chart"></canvas><a class="more" href="pages/forecast.html">View full forecast →</a>
-            </article>
-            <article class="card">
-                <div class="card-title">
-                    <h2>Recent Alerts</h2>
-                </div>
-                <div class="alert severe"><b>⚠ Severe Cyclone Risk</b><span>Coastal West Bengal · 36–48 hrs</span></div>
-                <div class="alert high"><b>⚠ Heavy Rainfall Expected</b><span>Odisha Coast · 24–36 hrs</span></div>
-                <div class="alert watch"><b>⚠ Potential Cyclone Formation</b><span>Central Bay of Bengal ·
-                        Monitor</span></div><a class="more" href="pages/alerts.html">View all alerts →</a>
-            </article>
+
+        <div class="hero-bottom">
+            <span>MONITOR</span>
+            <span>PREDICT</span>
+            <span>ANALYZE</span>
+            <span>WARN</span>
         </div>
     </main>
-    <footer>© 2026 BYTE THE STORM · Turning Satellite Data into Early Warnings.</footer>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/dashboard.js"></script>
-</body>
 
+    <footer>© 2026 BYTE THE STORM · AI-Powered Cyclone Intelligence</footer>
+</body>
 </html>

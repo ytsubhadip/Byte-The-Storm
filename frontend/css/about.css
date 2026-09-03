@@ -2,15 +2,32 @@
    ABOUT PAGE
 ======================================== */
 
+.about-page {
+    background: #05070b;
+    color: #ffffff;
+    min-height: 100vh;
+}
 
-/* Main introduction card */
 
-.about-card {
-    background: var(--card);
+/* ========================================
+   MAIN CONTAINER
+======================================== */
 
-    border: 1px solid var(--line);
+.about-page .container {
+    background: #05070b;
+}
 
-    border-radius: 12px;
+
+/* ========================================
+   MAIN INTRODUCTION CARD
+======================================== */
+
+.about-page .about-card {
+    background: #0b1118;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
 
     padding: 24px;
 
@@ -22,9 +39,11 @@
 }
 
 
-/* About icon */
+/* ========================================
+   ABOUT ICON
+======================================== */
 
-.about-icon {
+.about-page .about-icon {
     width: 52px;
     height: 52px;
 
@@ -35,24 +54,28 @@
     display: grid;
     place-items: center;
 
-    background: #e8f3ff;
+    background: #111c26;
 
-    color: var(--blue);
+    color: #a9c9e8;
 
     font-size: 24px;
 }
 
 
-/* Text */
+/* ========================================
+   TEXT
+======================================== */
 
-.about-card h2 {
+.about-page .about-card h2 {
     font-size: 20px;
 
     margin-bottom: 10px;
+
+    color: #ffffff;
 }
 
-.about-card p {
-    color: var(--muted);
+.about-page .about-card p {
+    color: rgba(255, 255, 255, 0.60);
 
     font-size: 13px;
 
@@ -66,29 +89,43 @@
    HOW IT WORKS
 ======================================== */
 
-.about-section {
+.about-page .about-section {
     margin-bottom: 28px;
 }
 
+.about-page .about-section > h2 {
+    color: #ffffff;
+}
 
-/* Four boxes */
-
-.about-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 16px;
+.about-page .about-section > p {
+    color: rgba(255, 255, 255, 0.60);
+    
 }
 
 
-/* Individual box */
+/* ========================================
+   FOUR BOXES
+======================================== */
 
-.about-box {
-    background: var(--card);
+.about-page .about-grid {
+    display: grid;
 
-    border: 1px solid var(--line);
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-top: 20px;
+}
+
+
+/* ========================================
+   INDIVIDUAL BOX
+======================================== */
+
+.about-page .about-box {
+    background: #0b1118;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
     border-radius: 10px;
 
@@ -96,10 +133,12 @@
 }
 
 
-/* Number */
+/* ========================================
+   NUMBER
+======================================== */
 
-.box-number {
-    color: var(--blue);
+.about-page .box-number {
+    color: #7db6e8;
 
     font-size: 12px;
 
@@ -109,19 +148,25 @@
 }
 
 
-/* Heading */
+/* ========================================
+   HEADING
+======================================== */
 
-.about-box h3 {
+.about-page .about-box h3 {
     font-size: 15px;
 
     margin-bottom: 8px;
+
+    color: #ffffff;
 }
 
 
-/* Description */
+/* ========================================
+   DESCRIPTION
+======================================== */
 
-.about-box p {
-    color: var(--muted);
+.about-page .about-box p {
+    color: rgba(255, 255, 255, 0.55);
 
     font-size: 12px;
 
@@ -133,51 +178,77 @@
    FEATURES
 ======================================== */
 
-.features-card {
+.about-page .features-card {
     display: block;
+
+    background: #0b1118;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
+
+    padding: 24px;
 }
 
 
-/* Feature list */
+/* ========================================
+   FEATURES HEADING
+======================================== */
 
-.features-list {
+.about-page .features-card h2 {
+    color: #ffffff;
+}
+
+.about-page .features-card > p {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+
+/* ========================================
+   FEATURE LIST
+======================================== */
+
+.about-page .features-list {
     display: grid;
 
-    grid-template-columns:
-        repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     gap: 12px;
 }
 
 
-/* Feature */
+/* ========================================
+   FEATURE
+======================================== */
 
-.feature {
+.about-page .feature {
     display: flex;
 
     gap: 12px;
 
     padding: 14px;
 
-    background: #f7fafc;
+    background: #111820;
 
-    border: 1px solid var(--line);
+    border: 1px solid rgba(255, 255, 255, 0.07);
 
     border-radius: 8px;
 }
 
 
-/* Check */
+/* ========================================
+   CHECK
+======================================== */
 
-.feature > span {
+.about-page .feature > span {
     width: 24px;
     height: 24px;
 
     border-radius: 50%;
 
-    background: #e9f8f1;
+    background: #10251d;
 
-    color: var(--green);
+    color: #72e6a1;
 
     display: grid;
 
@@ -189,17 +260,23 @@
 }
 
 
-/* Feature title */
+/* ========================================
+   FEATURE TITLE
+======================================== */
 
-.feature strong {
+.about-page .feature strong {
     font-size: 13px;
+
+    color: #ffffff;
 }
 
 
-/* Feature description */
+/* ========================================
+   FEATURE DESCRIPTION
+======================================== */
 
-.feature p {
-    color: var(--muted);
+.about-page .feature p {
+    color: rgba(255, 255, 255, 0.50);
 
     font-size: 11px;
 
@@ -213,12 +290,14 @@
    PROJECT INFO
 ======================================== */
 
-.project-info {
-    background: var(--nav);
+.about-page .project-info {
+    background: #0b1118;
 
-    color: white;
+    color: #ffffff;
 
-    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 10px;
 
     padding: 28px;
 
@@ -228,15 +307,17 @@
 }
 
 
-.project-info h2 {
+.about-page .project-info h2 {
     font-size: 22px;
 
     margin-bottom: 8px;
+
+    color: #ffffff;
 }
 
 
-.project-info p {
-    color: #b8cada;
+.about-page .project-info p {
+    color: rgba(255, 255, 255, 0.60);
 
     font-size: 13px;
 
@@ -244,9 +325,11 @@
 }
 
 
-/* Tags */
+/* ========================================
+   TAGS
+======================================== */
 
-.project-tags {
+.about-page .project-tags {
     display: flex;
 
     justify-content: center;
@@ -257,16 +340,18 @@
 }
 
 
-.project-tags span {
+.about-page .project-tags span {
     padding: 7px 12px;
 
-    border: 1px solid #31516b;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 
     border-radius: 20px;
 
     color: #d7e5ef;
 
     font-size: 10px;
+
+    background: rgba(255, 255, 255, 0.03);
 }
 
 
@@ -276,7 +361,7 @@
 
 @media (max-width: 1000px) {
 
-    .about-grid {
+    .about-page .about-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -285,15 +370,15 @@
 
 @media (max-width: 700px) {
 
-    .about-card {
+    .about-page .about-card {
         flex-direction: column;
     }
 
-    .about-grid {
+    .about-page .about-grid {
         grid-template-columns: 1fr;
     }
 
-    .features-list {
+    .about-page .features-list {
         grid-template-columns: 1fr;
     }
 
@@ -302,7 +387,7 @@
 
 @media (max-width: 500px) {
 
-    .project-info {
+    .about-page .project-info {
         padding: 22px 16px;
     }
 

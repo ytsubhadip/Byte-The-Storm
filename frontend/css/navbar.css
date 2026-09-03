@@ -31,15 +31,6 @@
     margin-top:3px
 }
 
-.logo {
-    width:36px;
-    height:36px;
-    border:2px solid #26b9ed;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    color:#26b9ed
-}
 
 .topbar nav {
     display:flex;
