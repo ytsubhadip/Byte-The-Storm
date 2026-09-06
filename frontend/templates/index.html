@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BYTE THE STORM — AI-powered cyclone monitoring that combines satellite intelligence, environmental data and predictive analysis to deliver faster early warnings.">
+    <title>BYTE THE STORM | AI Cyclone Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/home.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+<body class="home-page">
+    <header class="topbar home-nav">
+        <a class="brand" href="/">
+            <div class="brand-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2z"/>
+                    <path d="M12 6a6 6 0 0 0-6 6c0 2 1.5 3.5 3 4s3.5-.5 4.5-2"/>
+                </svg>
+            </div>
+            <span>
+                <b>BYTE THE STORM</b>
+                <small>AI-Powered Cyclone Intelligence</small>
+            </span>
+        </a>
+
+        <nav id="main-nav">
+            <a class="nav active" href="/">Home</a>
+            <a class="nav" href="/dashboard">Dashboard</a>
+            <a class="nav" href="/about">About</a>
+        </nav>
+
+        <div class="topbar-right">
+            <a href="/dashboard" class="nav-cta-btn">
+                <span class="pulse-dot"></span>
+                <span>Live Monitor</span>
+            </a>
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <div class="hero-badge"><span>AI</span> Intelligent Cyclone Monitoring</div>
+            <h1>Predict the Storm.<br><em>Protect the Future.</em></h1>
+            <p>
+                AI-powered cyclone monitoring that combines satellite intelligence,
+                environmental data and predictive analysis to deliver faster early warnings.
+            </p>
+            <div class="hero-actions">
+                <a class="hero-btn primary" href="/dashboard">Explore Dashboard <span>→</span></a>
+                <a class="hero-btn secondary" href="/about">How It Works <span>↗</span></a>
+            </div>
+            <div class="hero-note"><i></i> Turning satellite data into early warnings.</div>
+        </div>
+
+        <div class="hero-bottom">
+            <span>MONITOR</span>
+            <span>PREDICT</span>
+            <span>ANALYZE</span>
+            <span>WARN</span>
+        </div>
+    </main>
+
+    <footer>© 2026 BYTE THE STORM · AI-Powered Cyclone Intelligence</footer>
+
+    <script>
+        // Mobile hamburger toggle
+        const hamburger = document.getElementById('hamburger-btn');
+        const nav = document.getElementById('main-nav');
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
