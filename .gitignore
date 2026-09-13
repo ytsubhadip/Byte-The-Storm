@@ -221,3 +221,7 @@ __marimo__/
 data/
 mdapi/
 
+
+cyclone_dataset.csv
+ibtracs.NI.list.v04r00.csv
+newenv
