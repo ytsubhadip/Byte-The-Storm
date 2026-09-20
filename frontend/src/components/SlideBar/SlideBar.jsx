@@ -8,14 +8,15 @@ function SlideBar() {
       {/* Logo */}
 
       <div className="sidebar-logo">
-        <div className="logo-icon">
-          🌪
-        </div>
 
-        <div>
-          <h2>BYTE</h2>
-          <span>THE STORM</span>
-        </div>
+        <Link to="/">
+          <button type="button">
+          Back Home
+        </button>
+        </Link>
+        
+
+       
       </div>
 
 
