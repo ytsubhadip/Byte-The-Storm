@@ -1,0 +1,70 @@
+.dashboard-layout {
+  min-height: 100vh;
+
+  background: #040b12;
+
+  color: white;
+}
+
+
+.dashboard-content {
+  margin-left: 240px;
+
+  min-height: 100vh;
+
+  padding: 30px;
+}
+
+.smart-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+}
+.dashboard-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+
+.dashboard-label {
+  color: #20b8ff;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+}
+
+
+.dashboard-header h1 {
+  margin: 7px 0;
+
+  font-size: 30px;
+}
+
+
+.dashboard-header p {
+  margin: 0;
+
+  color: #8296a7;
+}
+
+
+.system-online {
+  padding: 10px 15px;
+
+  border-radius: 20px;
+
+  background: rgba(32, 214, 138, 0.08);
+
+  color: #20d68a;
+
+  font-size: 12px;
+}

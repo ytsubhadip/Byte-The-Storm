@@ -1,0 +1,21 @@
+{
+        "user_credentials": {
+                "username/email": "",
+                "password": ""
+        },
+        "search_parameters": {
+                "datasetId": "3SIMG_L1B_STD", 
+                "startTime": "2026-09-07",
+                "endTime": "2026-09-08",
+                "count": "2",
+                "boundingBox": "70.0,8.0,90.0,28.0",
+                "gId": ""
+        },
+        "download_settings": {
+                "download_path": "C:/Users/ytsub/Desktop/github/Byte-The-Storm/data/satellite/raw",
+                "organize_by_date": true,
+                "skip_user_input": false,
+                "generate_error_logs": true,
+                "error_logs_dir": "C:/Users/ytsub/Desktop/github/Byte-The-Storm/data/satellite/logs"
+        }
+}
