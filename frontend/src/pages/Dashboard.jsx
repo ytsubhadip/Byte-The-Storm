@@ -7,14 +7,17 @@ import SlideBar from '../components/SlideBar/SlideBar'
 import API from "../services/api";
 
 import "./Dashboard.css"
+import SmartCard from '../components/SmartCard/SmartCard';
 
 function Dashboard() {
 
     const [data, setData] = useState(null);
+    const lat = 15;
+    const lon = 88
 
     useEffect(() => {
 
-        API.get("/api/dashboard")
+        API.get(`/api/weather/get-live?lat=${lat}&lon=${lon}`)
             .then((response) => {
                 setData(response.data);
             })
@@ -52,35 +55,44 @@ function Dashboard() {
                 </div>
                 <div className="smart-card-grid">
                     <StatCard
-
-                        title="SEA SURFACE TEMP."
-                        value={data.sst}
+                        title="SEA SURFACE TEMP"
+                        value={data.sea_surface_temperature}
                         unit="°C"
-                        description="Favorable for development"
-                        icon="🌊"
                     />
-                    <StatCard
-                        title="PRESSURE"
-                        value={data.pressure}
-                        unit="hPa"
-                        description="Falling pressure"
-                        icon="◉"
-                    />
-
-                    <StatCard
-                        title="HUMIDITY"
+                    <SmartCard
+                        title="Humidity" 
                         value={data.humidity}
                         unit="%"
-                        description="High moisture"
-                        icon="💧"
                     />
-
-                    <StatCard
-                        title="WIND SHEAR"
-                        value={data.wind_shear}
-                        unit="kt"
-                        description="Moderate shear"
-                        icon="💨"
+                    <SmartCard
+                        title="Atmospheric Pressure"
+                        value={data.pressure}
+                        unit="hPa"
+                    />
+                     <SmartCard
+                        title="Wind Speed"
+                        value={data.wind_speed}
+                        unit="km/h"
+                    />
+                     <SmartCard
+                        title="Wind Direction"
+                        value={data.wind_direction}
+                        unit="°"
+                    />
+                     <SmartCard
+                        title="Wind Gusts"
+                        value={data.wind_gusts}
+                        unit="km/h"
+                    />  
+                     <SmartCard
+                        title="Cloud Cover"
+                        value={data.cloud_cover}
+                        unit="%"
+                    />  
+                    <SmartCard
+                        title="Precipitation"
+                        value = {data.precipitation}
+                        unit="mm"
                     />
                 </div>
 
